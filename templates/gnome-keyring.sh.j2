@@ -1,0 +1,13 @@
+#!/bin/sh
+GNOME_KEYRING_CONTROL=${XDG_RUNTIME_DIR:-/run/user/${EUID:-0}}/keyring/control
+SSH_AUTH_SOCK=${XDG_RUNTIME_DIR:-/run/user/${EUID:-0}}/keyring/ssh
+
+# check if GNOME_KEYRING_CONTROL file exists
+if [ -e "$GNOME_KEYRING_CONTROL" ]; then
+  export GNOME_KEYRING_CONTROL
+fi
+
+# check if SSH_AUTH_SOCK file exists
+if [ -e "$SSH_AUTH_SOCK" ]; then
+  export SSH_AUTH_SOCK
+fi

@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Kowalski Dragon (kowalski7cc)
+  namespace: kowalski7cc
+  description: Install GNOME keyring for Debian container on ChromeOS
+  role_name: chromeos_keyring
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+  galaxy_tags:
+    - chromeos
+    - keyring
+    - secrets

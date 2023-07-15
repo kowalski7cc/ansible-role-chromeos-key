@@ -1,0 +1,13 @@
+---
+# vars file for chromeos-secrets
+chromeos_keyring_packages:
+  - seahorse
+  - seahorse-daemon
+  - gnome-keyring
+  - libsecret-common
+  - libsecret-tools
+  - libpam-ssh-agent-auth
+  - gcr
+  - libpam-gnome-keyring
+  - pinentry-gnome3
+  - pinentry-curses
